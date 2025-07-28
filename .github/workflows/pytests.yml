@@ -38,9 +38,6 @@ jobs:
       - name: Install dependencies
         run: poetry install --with dev
 
-      - name: Export requirements.txt for compatibility
-        run: poetry export --without-hashes -f requirements.txt -o requirements.txt
-
       - name: Setup Gardenlinux
         uses: gardenlinux/python-gardenlinux-lib/.github/actions/setup@main
 
